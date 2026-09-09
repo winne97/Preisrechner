@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(240, 240, 240);
+  height: min-content;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.5rem;
+
+  font-family: Arial, Helvetica, sans-serif;
+  --primery-color: rgb(64, 136, 223);
+}
+
+h2 {
+  padding-bottom: 0.5rem;
+}
+
+button {
+  padding: 0.5rem;
+  border-radius: 5px;
+  font-size: 0.7rem;
+  background-color: rgb(245, 245, 245);
+  border-color: rgb(235, 235, 235);
+}
+
+button:hover {
+  filter: brightness(0.9);
+}
+
+.basicstructur {
+  background-color: rgb(255, 255, 255);
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.preisrechner {
+  width: 40%;
+}
+
+.articlelayout {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.5rem;
+}
+
+.articels {
+  display: flex;
+  flex-direction: column;
+}
+
+.articels:hover {
+  border-color: var(--primery-color);
+}
+
+.articleprice {
+  color: var(--primery-color);
+  font-weight: bold;
+  font-size: 0.9rem;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0rem 0.5rem 0rem;
+}
+
+.totalprice {
+  color: var(--primery-color);
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.allbuttons {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.zurücksetzen {
+  background-color: rgb(240, 55, 55);
+  border: none;
+  color: white;
+}
+
+.checkout {
+  display: flex;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+.checkoutbutton {
+  flex: 1;
+}
+
+.vorort {
+  background-color: rgb(52, 209, 65);
+  border: none;
+  color: white;
+}
+
+.lieferung {
+  background-color: var(--primery-color);
+  border: none;
+  color: white;
+}
+
+.bestellung {
+  width: 15%;
+}
+
+h3 {
+  padding-bottom: 0.5rem;
+}
+
+.scroll-container {
+  max-height: 42vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  font-size: 0.8rem;
+}
+
+.ordered-item {
+  padding: 0.5rem 0rem 0.5rem 0rem;
+  border-bottom: solid 0.05rem rgb(196, 196, 196);
+}

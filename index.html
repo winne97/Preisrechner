@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preisrechner</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="basicstructur preisrechner">
+      <h2>Preisrechner</h2>
+      <div class="articlelayout">
+        <button class="articels" onclick="addItemToOrder('Kaffee', 3.5)">
+          <span>Kaffee</span
+          ><span id="Kaffee" class="articleprice">3,50</span></button
+        ><button class="articels" onclick="addItemToOrder('Tee', 2.5)">
+          <span>Tee</span><span class="articleprice">2,50 €</span></button
+        ><button class="articels" onclick="addItemToOrder('Apfelschorle', 4.0)">
+          <span>Apfelschorle</span
+          ><span class="articleprice">4,00 €</span></button
+        ><button class="articels" onclick="addItemToOrder('Wasser', 2.0)">
+          <span>Wasser</span><span class="articleprice">2,00 €</span></button
+        ><button class="articels" onclick="addItemToOrder('Bratwurst', 5.5)">
+          <span>Bratwurst</span><span class="articleprice">5,50 €</span></button
+        ><button class="articels" onclick="addItemToOrder('Schnitzel', 12.5)">
+          <span>Schnitzel</span
+          ><span class="articleprice">12,50 €</span></button
+        ><button class="articels" onclick="addItemToOrder('Currywurst', 6.0)">
+          <span>Currywurst</span
+          ><span class="articleprice">6,00 €</span></button
+        ><button class="articels" onclick="addItemToOrder('Brezel', 4.5)">
+          <span>Brezel</span><span class="articleprice">4,50 €</span></button
+        ><button class="articels" onclick="addItemToOrder('Käsespätzle', 8.0)">
+          <span>Käsespätzle</span
+          ><span class="articleprice">8,00 €</span></button
+        ><button class="articels" onclick="addItemToOrder('Pommes', 3.5)">
+          <span>Pommes</span><span class="articleprice">3,50 €</span></button
+        ><button class="articels" onclick="addItemToOrder('Apfelstrudel', 4.5)">
+          <span>Apfelstrudel</span
+          ><span class="articleprice">4,50 €</span></button
+        ><button class="articels" onclick="addItemToOrder('Berliner', 3.0)">
+          <span>Berliner</span><span class="articleprice">3,00 €</span>
+        </button>
+        <button class="articels" onclick="addItemToOrder('Schwarzwälder', 5.0)">
+          <span>Schwarzwälder</span
+          ><span class="articleprice">5,00 €</span></button
+        ><button class="articels" onclick="addItemToOrder('Brötchen', 2.5)">
+          <span>Brötchen</span><span class="articleprice">2,50 €</span></button
+        ><button class="articels" onclick="addItemToOrder('Leberkäse', 7.0)">
+          <span>Leberkäse</span><span class="articleprice">7,00 €</span></button
+        ><button
+          class="articels"
+          onclick="addItemToOrder('Kartoffelsalat', 6.5)"
+        >
+          <span>Kartoffelsalat</span><span class="articleprice">6,50 €</span>
+        </button>
+      </div>
+      <br />
+      <hr />
+      <div class="total">
+        <span>Gesamt</span>
+        <span id="totalprice" class="totalprice">0,00 €</span>
+      </div>
+      <div class="allbuttons">
+        <button class="zurücksetzen" onclick="clearItems()">
+          Zurücksetzen
+        </button>
+        <div class="checkout">
+          <button class="checkoutbutton vorort" onclick="payOnSite()">
+            Vor Ort
+          </button>
+          <button class="checkoutbutton lieferung" onclick="deliveryPay()">
+            Lieferung
+          </button>
+        </div>
+      </div>
+    </div>
+    <div class="basicstructur bestellung">
+      <h3>Bestellung</h3>
+      <div id="scroll-container" class="scroll-container"></div>
+    </div>
+    <script src="index.js" defer></script>
+  </body>
+</html>
